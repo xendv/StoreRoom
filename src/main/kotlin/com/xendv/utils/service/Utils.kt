@@ -1,4 +1,4 @@
-package com.xendv.utils
+package com.xendv.utils.service
 
 import io.ktor.server.config.*
 

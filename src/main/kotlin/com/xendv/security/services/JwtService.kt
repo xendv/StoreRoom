@@ -4,7 +4,7 @@ import com.auth0.jwt.JWT
 import com.auth0.jwt.JWTVerifier
 import com.auth0.jwt.algorithms.Algorithm
 import com.xendv.security.entities.dao.UserDAO
-import com.xendv.utils.get
+import com.xendv.utils.service.get
 import io.ktor.server.application.*
 import java.util.*
 

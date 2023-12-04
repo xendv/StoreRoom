@@ -1,6 +1,6 @@
 package com.xendv.plugins
 
-import com.xendv.storeroom.entities.ServerException
+import com.xendv.storeroom.entities.common.ServerException
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.statuspages.*

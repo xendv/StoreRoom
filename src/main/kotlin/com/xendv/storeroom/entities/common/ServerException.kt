@@ -1,4 +1,4 @@
-package com.xendv.storeroom.entities
+package com.xendv.storeroom.entities.common
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

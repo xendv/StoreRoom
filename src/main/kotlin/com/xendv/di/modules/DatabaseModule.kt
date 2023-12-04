@@ -1,6 +1,6 @@
 package com.xendv.di.modules
 
-import com.xendv.utils.get
+import com.xendv.utils.service.get
 import io.ktor.server.application.*
 import org.jetbrains.exposed.sql.Database
 import org.koin.dsl.module
