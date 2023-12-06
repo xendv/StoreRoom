@@ -85,8 +85,8 @@ class ProductService(
             val dao = ProductDAO.new(sku) {
                 this.barcode = barcode
                 this.name = name
-                this.description = product.description
-                this.measurement = product.measurement
+                product.description?.let { this.description = it }
+                product.measurement?.let { this.measurement = it }
             }
 
             dao.toEntity()
