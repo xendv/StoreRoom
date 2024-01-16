@@ -7,7 +7,6 @@ import com.google.zxing.qrcode.QRCodeWriter
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel
 import java.awt.image.BufferedImage
 import java.io.File
-import java.sql.Timestamp
 import java.util.*
 import javax.imageio.ImageIO
 
@@ -29,9 +28,7 @@ class QRCodeGenerator {
 
     fun generateMultipleQRCodes(contents: List<String>) {
         contents.forEach { content ->
-            val filePath = "$folderPath/qr_code_${content}_${
-                Timestamp(System.currentTimeMillis()).toString().replace(':', '-')
-            }.png"
+            val filePath = "$folderPath/qr_code_${content}.png"
             generateSingleQRCode(content, filePath)
         }
     }
@@ -55,7 +52,7 @@ class QRCodeGenerator {
     }
 }
 
-fun testGeneration() {
+fun main() {
     val generator = QRCodeGenerator()
     generator.generateMultipleQRCodes(listOf("QRCode1", "QRCode2", "QRCode3"))
 }
