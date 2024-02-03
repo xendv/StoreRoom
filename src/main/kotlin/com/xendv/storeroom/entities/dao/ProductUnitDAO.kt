@@ -8,6 +8,6 @@ import org.jetbrains.exposed.dao.id.EntityID
 class ProductUnitDAO(id: EntityID<String>) : Entity<String>(id) {
     companion object : EntityClass<String, ProductUnitDAO>(ProductUnitsTable)
 
-    var sku by ProductDAO referencedOn ProductUnitsTable.id
+    var sku by ProductDAO referencedOn ProductUnitsTable.sku
     var lot by LotDAO referencedOn ProductUnitsTable.lot
 }

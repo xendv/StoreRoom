@@ -44,7 +44,7 @@ class ExpenseService(
             val dao = requireNotNull(
                 ExpenseDAO.findById(expense.id)
             ) { "Нет записи с id $id" }
-            expense.units?.let { dao.units = it as SizedIterable<ProductUnitDAO> }
+            //expense.units?.let { dao.units = it as SizedIterable<ProductUnitDAO> }
             expense.date?.let { dao.date = LocalDateTime.parse(it) }
             dao.toEntity()
         }

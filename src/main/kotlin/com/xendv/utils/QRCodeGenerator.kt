@@ -54,5 +54,5 @@ class QRCodeGenerator {
 
 fun main() {
     val generator = QRCodeGenerator()
-    generator.generateMultipleQRCodes(listOf("QRCode1", "QRCode2", "QRCode3"))
+    generator.generateMultipleQRCodes(listOf("5XSzzCjAeD", "tronpY117R", "38dDd7Q0gA"))
 }
